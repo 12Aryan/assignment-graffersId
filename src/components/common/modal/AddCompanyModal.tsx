@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import {
   Button,
   Flex,
@@ -9,7 +9,6 @@ import {
   ModalFooter,
   ModalHeader,
   ModalOverlay,
-  Text,
 } from "@chakra-ui/react";
 import DarkCircle from "../../../icons/DarkCircle";
 import LightCircle from "../../../icons/LightCircle";
@@ -33,7 +32,7 @@ const AddCompanyModal = ({
 }: AddReviewProps) => {
   const [errors, setErrors] = useState<any>({});
 
-  const handleInputChange = (e) => {
+  const handleInputChange = (e: any) => {
     const { name, value, type } = e.target;
     if (type === "date") {
       setCompanyData?.({

@@ -11,7 +11,7 @@ import {
   Textarea,
   Text,
 } from "@chakra-ui/react";
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import DarkCircle from "../../../icons/DarkCircle";
 import LightCircle from "../../../icons/LightCircle";
 import InputField from "../input-field/InputField";
@@ -30,7 +30,6 @@ interface AddReviewProps {
 const AddReviewModal = ({
   isOpen,
   onClose,
-  handleClick,
   reviewData,
   setReviewData,
 }: AddReviewProps) => {
@@ -39,7 +38,7 @@ const AddReviewModal = ({
   const [errors, setErrors] = useState<any>({});
   const companyData = useSelector(getCompany);
 
-  const handleInputChange = (e) => {
+  const handleInputChange = (e: any) => {
     setReviewData?.({ ...reviewData, [e.target.name]: e.target.value });
   };
 

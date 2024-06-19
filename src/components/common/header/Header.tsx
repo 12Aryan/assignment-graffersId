@@ -10,7 +10,7 @@ const Header = () => {
   const dispatch = useDispatch<any>();
   const [searchQuery, setSearchQuery] = useState("");
 
-  const handleSearchInputchange = (e) => {
+  const handleSearchInputchange = (e: any) => {
     setSearchQuery(e.target.value);
   };
 

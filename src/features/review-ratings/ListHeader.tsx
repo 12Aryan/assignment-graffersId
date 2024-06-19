@@ -47,7 +47,7 @@ const ListHeader = () => {
     resetCompanyData();
   };
 
-  const handleSearchInputchange = (e) => {
+  const handleSearchInputchange = (e: any) => {
     setSearchQuery(e.target.value);
   };
 

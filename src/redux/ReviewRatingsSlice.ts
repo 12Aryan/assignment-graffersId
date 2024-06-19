@@ -99,9 +99,6 @@ export const ReviewRatingsSlice = createSlice({
   name: "ReviewRatingsSlice",
   initialState: initialState,
   reducers: {
-    CalculateRatingAvg: (state, action) => {
-      
-    },
   },
   extraReducers: (builder) => {
     builder.addCase(FetchCompanyList.fulfilled, (state, action) => {
